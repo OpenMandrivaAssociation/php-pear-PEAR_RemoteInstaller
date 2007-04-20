@@ -5,7 +5,7 @@
 
 Summary:	%{_pearname} - PEAR Remote installation plugin through FTP
 Name:		php-pear-%{_pearname}
-Version:	0.3.0
+Version:	0.3.1
 Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
@@ -88,5 +88,3 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/%{_subclass}/*.php
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
