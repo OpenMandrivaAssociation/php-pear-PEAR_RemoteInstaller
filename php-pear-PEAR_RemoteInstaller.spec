@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	0.3.1
-Release:	%mkrel 9
+Release:	%mkrel 10
 Summary:	PEAR Remote installation plugin through FTP
 License:	PHP License
 Group:		Development/PHP
