@@ -26,7 +26,6 @@ To take advantage, you must have a config file on the remote ftp
 server and full access to the server to create and remove files.
 The config-create command can be used to get started, and the
 remote_config configuration variable is set to the full URL as
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
 in "ftp://ftp.example.com/path/to/pear.ini"
  
 After this is done, install/upgrade as normal using the remote*
