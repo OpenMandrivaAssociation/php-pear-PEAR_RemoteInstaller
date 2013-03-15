@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	0.3.1
-Release:	%mkrel 13
+Release:	14
 Summary:	PEAR Remote installation plugin through FTP
 License:	PHP License
 Group:		Development/PHP
@@ -15,7 +15,6 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	php-pear
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Originally part of the 1.4.0 new features, remote installation
@@ -27,6 +26,7 @@ To take advantage, you must have a config file on the remote ftp
 server and full access to the server to create and remove files.
 The config-create command can be used to get started, and the
 remote_config configuration variable is set to the full URL as
+Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
 in "ftp://ftp.example.com/path/to/pear.ini"
  
 After this is done, install/upgrade as normal using the remote*
@@ -37,7 +37,6 @@ commands as if they were local.
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -50,7 +49,6 @@ install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 %clean
-rm -rf %{buildroot}
 
 
 
