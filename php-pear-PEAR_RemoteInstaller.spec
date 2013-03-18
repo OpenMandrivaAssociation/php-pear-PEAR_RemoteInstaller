@@ -3,13 +3,13 @@
 %define		upstream_name	%{_class}_RemoteInstaller
 
 Name:		php-pear-%{upstream_name}
-Version:	0.3.1
-Release:	14
+Version:	0.3.2
+Release:	1
 Summary:	PEAR Remote installation plugin through FTP
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/PEAR_RemoteInstaller/
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
+Source0:	http://download.pear.php.net/package/PEAR_RemoteInstaller-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -123,4 +123,5 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 * Tue Nov 08 2005 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1mdk
 - initial Mandriva package
+
 

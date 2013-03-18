@@ -1,2 +1,4 @@
+removed_sources:
+  PEAR_RemoteInstaller-0.3.1.tar.bz2: a86b034e51e2097013a15547dd767a15f121d923
 sources:
-  "PEAR_RemoteInstaller-0.3.1.tar.bz2": a86b034e51e2097013a15547dd767a15f121d923
+  PEAR_RemoteInstaller-0.3.2.tgz: df3ec3b8c00e3f2eb9f96fc10bd1c0818fe517be
