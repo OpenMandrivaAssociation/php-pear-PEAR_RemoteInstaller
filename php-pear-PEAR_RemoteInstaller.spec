@@ -5,7 +5,7 @@
 Summary:	PEAR Remote installation plugin through FTP
 Name:		php-pear-%{modname}
 Version:	0.3.2
-Release:	8
+Release:	9
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/PEAR_RemoteInstaller/
