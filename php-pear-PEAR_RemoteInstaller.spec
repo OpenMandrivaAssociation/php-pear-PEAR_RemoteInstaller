@@ -8,7 +8,7 @@ Version:	0.3.2
 Release:	12
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/PEAR_RemoteInstaller/
+Url:		https://pear.php.net/package/PEAR_RemoteInstaller/
 Source0:	http://download.pear.php.net/package/PEAR_RemoteInstaller-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
